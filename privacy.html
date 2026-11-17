@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — AUTOCLIPPER</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">✂️</span>
+        AUTOCLIPPER
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="legal">
+    <div class="wrap">
+      <a class="back-link" href="index.html">← Retour à l'accueil</a>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Dernière mise à jour : 17 novembre 2026</p>
+
+      <p>
+        AUTOCLIPPER est une application desktop qui s'exécute entièrement en
+        local, sur l'ordinateur de l'utilisateur. Cette page explique quelles
+        données sont traitées, où elles sont stockées, et ce qui est
+        transmis à des services tiers — en particulier TikTok.
+      </p>
+
+      <h2>1. Traitement local par défaut</h2>
+      <p>
+        Par défaut, AUTOCLIPPER ne transmet rien à l'extérieur de votre
+        ordinateur. La capture du live (directement depuis le flux du
+        streamer, ou via capture d'écran et audio selon la plateforme), la
+        détection des moments intéressants, le montage des clips, leur
+        conversion au format vertical et la génération des sous-titres se
+        font intégralement en local, via des outils exécutés sur votre
+        machine. Aucun de ces traitements n'envoie de données à un serveur
+        distant.
+      </p>
+
+      <h2>2. Données liées à l'intégration TikTok</h2>
+      <p>
+        L'intégration TikTok est optionnelle et n'est activée que si vous
+        choisissez explicitement de connecter votre compte. Dans ce cas :
+      </p>
+      <ul>
+        <li>
+          <strong>Connexion (OAuth)</strong> — vous êtes redirigé vers la
+          page de connexion officielle de TikTok. Votre identifiant et votre
+          mot de passe TikTok sont saisis directement sur le site de TikTok
+          et ne transitent jamais par AUTOCLIPPER.
+        </li>
+        <li>
+          <strong>Jetons d'accès</strong> — après autorisation, TikTok
+          transmet à AUTOCLIPPER un jeton d'accès et un jeton de
+          rafraîchissement propres à votre compte. Ces jetons sont stockés
+          uniquement dans le Trousseau (Keychain) de macOS, protégé par
+          votre session utilisateur. Ils ne sont jamais écrits dans un
+          fichier du projet, jamais affichés dans l'interface, et jamais
+          inclus dans les journaux (logs) de l'application.
+        </li>
+        <li>
+          <strong>Envoi d'un clip</strong> — lorsque vous cliquez sur
+          "Envoyer sur TikTok" pour un clip précis, ce fichier vidéo (et
+          uniquement celui-ci) est transmis directement aux serveurs
+          officiels de TikTok via l'API "Content Posting API", pour être
+          déposé en brouillon dans votre boîte de réception TikTok. Aucun
+          autre fichier, aucune autre donnée de votre ordinateur n'est
+          transmise à cette occasion.
+        </li>
+        <li>
+          <strong>Publication directe (Direct Post)</strong> — si vous
+          l'activez, AUTOCLIPPER affiche avant chaque envoi le nom de votre
+          compte TikTok, un aperçu de la vidéo, le choix de visibilité
+          (sans valeur par défaut), les options d'interaction et de
+          divulgation commerciale. Rien n'est envoyé sans votre consentement
+          explicite pour cette publication précise. AUTOCLIPPER lit les
+          informations de publication de votre compte (« creator info ») et
+          le statut de traitement de vos publications, uniquement pour
+          afficher cet écran et confirmer la publication.
+        </li>
+      </ul>
+
+      <h2>2 bis. Données liées à l'intégration YouTube (API YouTube de Google)</h2>
+      <p>
+        L'intégration YouTube est optionnelle. Si vous connectez votre
+        chaîne, AUTOCLIPPER utilise les services d'API YouTube de Google
+        avec les autorisations suivantes : mise en ligne de vidéos
+        (<code>youtube.upload</code>), lecture des informations de vos
+        propres vidéos pour confirmer leur statut
+        (<code>youtube.readonly</code>) et lecture des statistiques de vos
+        propres vidéos (<code>yt-analytics.readonly</code>).
+      </p>
+      <ul>
+        <li>Les jetons Google sont stockés uniquement dans le Trousseau macOS, comme les jetons TikTok.</li>
+        <li>Seul le clip que vous validez est envoyé à YouTube, avec son titre et sa description.</li>
+        <li>Les statistiques lues (vues, durée moyenne regardée, abonnés gagnés…) restent sur votre ordinateur et servent uniquement à vous indiquer quels formats fonctionnent.</li>
+        <li>
+          L'utilisation et le transfert par AUTOCLIPPER des informations
+          reçues des API Google respectent le
+          <a href="https://developers.google.com/terms/api-services-user-data-policy">Règlement sur les données utilisateur des services d'API Google</a>,
+          y compris les exigences d'utilisation limitée.
+        </li>
+        <li>
+          En utilisant cette intégration, vous acceptez les
+          <a href="https://www.youtube.com/t/terms">Conditions d'utilisation de YouTube</a>
+          et les <a href="https://policies.google.com/privacy">Règles de confidentialité de Google</a>.
+          Vous pouvez révoquer l'accès à tout moment depuis
+          <a href="https://myaccount.google.com/permissions">la page des autorisations de votre compte Google</a>.
+        </li>
+      </ul>
+
+      <h2>3. Ce qui n'est jamais fait</h2>
+      <ul>
+        <li>Aucune publication sur TikTok sans action explicite de votre
+          part (brouillon finalisé dans l'application TikTok, ou consentement
+          donné pour chaque publication directe). Sur YouTube, une
+          publication automatique n'a lieu que si vous activez vous-même le
+          mode automatique et autorisez le créateur concerné.</li>
+        <li>Aucune revente, aucun partage de vos données ou de vos jetons
+          d'accès à un tiers.</li>
+        <li>Aucun scraping ni automatisation de l'interface TikTok — seule
+          l'API officielle est utilisée.</li>
+        <li>Aucun outil d'analyse, de mesure d'audience ou de publicité,
+          ni sur l'application, ni sur ce site. Ce site ne dépose aucun
+          cookie de suivi.</li>
+      </ul>
+
+      <h2>4. Contrôle de vos données</h2>
+      <ul>
+        <li>Vous pouvez déconnecter votre compte TikTok à tout moment depuis
+          l'interface d'AUTOCLIPPER — les jetons stockés localement sont
+          alors supprimés du Trousseau macOS.</li>
+        <li>Vous pouvez également révoquer l'accès d'AUTOCLIPPER depuis les
+          paramètres de votre compte TikTok directement.</li>
+        <li>Les clips générés restent des fichiers ordinaires sur votre
+          disque : vous pouvez les consulter, les déplacer ou les supprimer
+          librement, indépendamment de l'application.</li>
+        <li>La désinstallation de l'application supprime les données locales
+          qu'elle a créées (buffers, fichiers de travail, jetons stockés).</li>
+      </ul>
+
+      <h2>5. Sécurité</h2>
+      <p>
+        Les échanges avec TikTok utilisent exclusivement les points d'accès
+        HTTPS officiels de l'API TikTok. Les jetons d'accès sont stockés via
+        le Trousseau macOS plutôt que dans un fichier en clair. Aucune clé
+        secrète propre à l'application n'est intégrée au code source
+        distribué : elle doit être fournie localement par la personne qui
+        exécute l'application.
+      </p>
+
+      <h2>6. Public concerné</h2>
+      <p>
+        AUTOCLIPPER est un outil destiné à un usage personnel par des
+        utilisateurs majeurs disposant déjà d'un compte sur les plateformes
+        concernées (Twitch, YouTube, TikTok). Il n'est pas destiné aux
+        enfants.
+      </p>
+
+      <h2>7. Modifications de cette politique</h2>
+      <p>
+        Cette politique de confidentialité peut être mise à jour. La date en
+        haut de page indique la dernière révision.
+      </p>
+
+      <h2>8. Contact</h2>
+      <p>
+        Pour toute question relative à cette politique ou à vos données :
+        <a href="mailto:enzo.amaro33@gmail.com">enzo.amaro33@gmail.com</a>.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© AUTOCLIPPER — application desktop personnelle.</span>
+      <div class="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

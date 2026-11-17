@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AUTOCLIPPER — Clipping automatique de livestreams</title>
+  <meta name="description" content="AUTOCLIPPER est une application desktop macOS qui détecte les meilleurs moments d'un livestream Twitch, en fait des clips verticaux sous-titrés, et vous laisse les publier en brouillon sur TikTok ou YouTube.">
+  <meta name="theme-color" content="#08080c">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">✂️</span>
+        AUTOCLIPPER
+      </a>
+      <div class="nav-links">
+        <a href="#comment-ca-marche">Comment ça marche</a>
+        <a href="#tiktok">Intégration TikTok</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <span class="eyebrow">Application desktop macOS</span>
+      <h1>Les meilleurs moments de vos streams,<br><span class="accent-text">clippés tout seuls.</span></h1>
+      <p class="lead">
+        AUTOCLIPPER tourne en local sur votre Mac : il surveille un livestream
+        (Twitch aujourd'hui), repère les moments qui sortent du lot, en
+        découpe des clips courts au format vertical avec sous-titres
+        générés automatiquement, et les prépare pour vos réseaux — TikTok et
+        YouTube via leurs API officielles, Instagram en préparation.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#comment-ca-marche">Voir comment ça marche</a>
+        <a class="btn btn-secondary" href="#tiktok">Intégration TikTok</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="comment-ca-marche">
+    <div class="wrap">
+      <h2 class="section-title">Un pipeline entièrement local</h2>
+      <p class="section-sub">
+        Tout se passe sur votre machine : capture, analyse, montage. Rien n'est
+        envoyé où que ce soit tant que vous ne le décidez pas explicitement.
+      </p>
+
+      <div class="pipeline">
+        <span class="pipeline-step">🎥 Capture du live (flux direct)</span>
+        <span class="pipeline-arrow">→</span>
+        <span class="pipeline-step">🔎 Détection des moments forts</span>
+        <span class="pipeline-arrow">→</span>
+        <span class="pipeline-step">✂️ Découpe du clip</span>
+        <span class="pipeline-arrow">→</span>
+        <span class="pipeline-step">📱 Format vertical 1080×1920</span>
+        <span class="pipeline-arrow">→</span>
+        <span class="pipeline-step">💬 Sous-titres automatiques</span>
+        <span class="pipeline-arrow">→</span>
+        <span class="pipeline-step">⭐ Scoring</span>
+        <span class="pipeline-arrow">→</span>
+        <span class="pipeline-step">📂 Classement par streamer / date</span>
+      </div>
+
+      <div class="grid">
+        <div class="feature-card">
+          <span class="icon">🖥️</span>
+          <h3>100% desktop, 100% local</h3>
+          <p>Aucun serveur distant. La capture, l'analyse et le montage tournent directement sur votre Mac.</p>
+        </div>
+        <div class="feature-card">
+          <span class="icon">🧠</span>
+          <h3>Détection automatique</h3>
+          <p>Repère les pics d'intensité (audio, réactions) pour isoler les passages qui valent le coup d'être coupés.</p>
+        </div>
+        <div class="feature-card">
+          <span class="icon">📱</span>
+          <h3>Prêt pour les réseaux</h3>
+          <p>Format vertical 1080×1920, sous-titres générés automatiquement, durée toujours limitée à 80 secondes maximum.</p>
+        </div>
+        <div class="feature-card">
+          <span class="icon">🗂️</span>
+          <h3>Organisation automatique</h3>
+          <p>Chaque clip est rangé par streamer puis par date, avec un aperçu consultable dans une interface locale dédiée.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tiktok">
+    <div class="wrap">
+      <h2 class="section-title">Publication : TikTok, YouTube, Instagram</h2>
+      <p class="section-sub">
+        Une fois un clip prêt, vous pouvez l'envoyer vers votre compte TikTok
+        ou YouTube en un clic, via leurs API officielles respectives —
+        toujours sous votre contrôle direct. L'intégration Instagram est
+        préparée dans l'architecture mais pas encore active : l'API Instagram
+        exige un compte Business/Creator validé et un hébergement public des
+        vidéos, ce qui n'est pas encore réuni.
+      </p>
+
+      <div class="two-col">
+        <div class="callout">
+          <strong>Ce que fait l'intégration :</strong>
+          <ul>
+            <li>Vous connectez votre propre compte TikTok via la procédure d'autorisation officielle de TikTok (OAuth) — AUTOCLIPPER ne voit jamais votre mot de passe.</li>
+            <li>Vous choisissez le clip, écrivez une description et des hashtags.</li>
+            <li>Le clip est envoyé dans votre boîte de réception TikTok en tant que <strong>brouillon</strong>.</li>
+            <li>Vous finalisez et publiez vous-même, depuis l'application TikTok, quand vous le souhaitez.</li>
+          </ul>
+        </div>
+        <div class="callout">
+          <strong>Ce que l'intégration ne fait jamais :</strong>
+          <ul>
+            <li>Aucune publication publique automatique. Un clip envoyé reste un brouillon tant que vous n'avez pas vous-même appuyé sur "publier" dans TikTok.</li>
+            <li>Aucun scraping ni automatisation de l'interface TikTok. Uniquement l'API officielle "Content Posting API".</li>
+            <li>Aucune donnée TikTok envoyée ailleurs qu'à TikTok lui-même.</li>
+          </ul>
+        </div>
+      </div>
+
+      <p style="text-align:center; margin-top: 32px; font-size: 13px; color: var(--text-dim);">
+        AUTOCLIPPER utilise l'API officielle TikTok. Consultez notre
+        <a href="privacy.html">Privacy Policy</a> pour le détail des données concernées.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span>© AUTOCLIPPER — application desktop personnelle.</span>
+      <div class="footer-links">
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+    <p class="disclaimer">
+      AUTOCLIPPER est un projet indépendant. Il n'est ni affilié à, ni
+      approuvé, ni parrainé par TikTok Inc. ou ByteDance Ltd. "TikTok" est
+      une marque déposée de ses propriétaires respectifs, mentionnée ici à
+      titre purement descriptif.
+    </p>
+  </footer>
+
+</body>
+</html>
